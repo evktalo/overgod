@@ -51,7 +51,7 @@ float decoy_table [ANGLE_FULL]; // not used
 float cos_table [ANGLE_FULL];
 float sin_table [ANGLE_FULL];
 
-inline int xpart(int angle, int length);
+int xpart(int angle, int length);
 
 void init_trig(void)
 {
@@ -66,13 +66,13 @@ void init_trig(void)
  
 }
 
-inline int xpart(int angle, int length)
+int xpart(int angle, int length)
 {
 // return (lcos(angle) * length);// / ANGLE_FULL;
  return (cos_table [angle & 1023] * length);// / ANGLE_FULL;
 }
 
-inline int ypart(int angle, int length)
+int ypart(int angle, int length)
 {
  return (sin_table [angle & 1023] * length);// / ANGLE_FULL;
 }

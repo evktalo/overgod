@@ -323,7 +323,7 @@ void init_sound(void)
    }
 
    reserve_voices(16, 0);
-   if (install_sound (DIGI_AUTODETECT, MIDI_AUTODETECT, NULL) == -1)
+   if (install_sound (DIGI_AUTODETECT, MIDI_NONE, NULL) == -1)
    {
 //    allegro_message("\n\r\n\rSound autodetect failed.");
     sound_active = 0;

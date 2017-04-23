@@ -1,7 +1,7 @@
 CC?=gcc
 CFLAGS?=-O2 -march=native
 CFLAGS_SURPRESS_WARNING?=-Wno-format-security
-LDFLAGS?=-lm -lalleg
+LDFLAGS+=-lm -lalleg
 
 SOURCE=$(wildcard *.c)
 OBJECTS=$(patsubst %.c,%.o,$(SOURCE))

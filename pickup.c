@@ -169,7 +169,7 @@ void manage_pickup(int p)
 
 void pickup_explodes(int p, int taken)
 {
-  int passing_colours [5];
+  int passing_colours [4];
 
   if (pickup[p].type == PICKUP_SECONDARY)
   {

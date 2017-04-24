@@ -9,7 +9,6 @@ Copyright 2005 Linley Henzell
 *******************************************
 
 
-
 Overgod is distributed under the terms of the Free Software Foundation's General Public Licence (GPL) - see the file LICENCE.TXT. It comes with no warranty, and no liability is accepted for any harm it may do to you or your computer. In the unlikely event that it causes you some injury, contact your MP or other local representative. Read the licence for more information.
 
 The source code should be available from http://users.olis.net.au/zel/
@@ -28,6 +27,7 @@ If you like Overgod, you might also like some of my other games:
 Contents
 *******************************************
 
+
 1. Acknowledgements
 2. Introduction
 3. Controls
@@ -41,6 +41,7 @@ Contents
 1. Acknowledgements
 *******************************************
 
+
 Overgod was made with:
 - The MingW version of the Gnu Compiler Collection C compiler
 - Bloodshed Software's Dev-C++
@@ -48,6 +49,7 @@ Overgod was made with:
 - The GIMP (for graphics)
 - Psycle (for sound) and various VSTs, including a set by Erik Wollo
 - Audacity (for sample editing)
+- UPX (used to pack the executable - from http://upx.sourceforge.net)
 
 Many thanks to anyone who worked on any of these excellent free programs!
 
@@ -64,7 +66,7 @@ Your vehicle is a marvel of transplanar engineering, capable of travelling to wo
 
 Your task will not be an easy one. On each layer of the Oversphere you must fight your way through the lesser gods, greater gods, elder gods, younger gods, demigods, demiurges, idols, sub-idols, undergods and overgods, and all of their children, slaves, servants, soldiers, sentinels, guardians, messengers and machines. Most of the enemies you meet must be destroyed for you to reach the next layer. The larger enemies are worth several of their smaller kin, while there are some whose destruction may be useful but is not required. A secret ritual has shut the fearsome Eyes of the Watchful Ones, although only for a time. You will have from two to three minutes in each layer before they open again, so don't tarry!
 
-You can tell which enemies you need to destroy by looking at your overview on the bottom right of the screen. Essential targets are large yellow dots, while unimportant ones are small and orange. The amount of time you have, and your progress through the layer, are indicated on the top left of the screen, while on the bottom left you can check how well your vehicle is holding up against the fury of your enemies and how many lives you have.
+You can tell which enemies you need to destroy by looking at your overview on the bottom right of the screen. Essential targets are large yellow dots, while unimportant ones are small and orange. The amount of time you have, and your progress through the layer, are indicated on the top left of the screen, while on the bottom left you can check how well your vehicle is holding up against the fury of your enemies and how many lives you have. 
 
 To start a game, select the Start Game option and, when prompted, press fire. If you want to play a cooperative game, both players press fire. Each vehicle you can choose has a particular speciality.
 
@@ -84,7 +86,7 @@ Below Duel Mode are some challenge mode settings which you have to unlock by pla
 You can set up the controls in the Options menu. Here is what each command does:
 
 - Forwards
-Accelerates you forwards. Your vehicle encounters an increasing amount of drag as it speeds up, so it won't keep accelerating forever.
+Accelerates you forwards. Your vehicle encounters an increasing amount of drag as it speeds up, so it won't keep accelerating forever. 
 
 - Left and Right
 Turns your craft.
@@ -99,7 +101,7 @@ Fires your vehicle's main weapon.
 Fires your vehicle's secondary weapon, if you have one and if it's ready.
 
 - Toggle Link Fire
-If Link fire is on, firing your darts also fires your secondary weapon as soon as it's ready. This is useful or annoying depending on which weapon you have, so turn it on or off accordingly.
+If Link fire is on, firing your darts also fires your secondary weapon as soon as it's ready. This is useful or annoying depending on which weapon you have, so turn it on or off accordingly. 
 
 - Escape
 The Escape key always pauses the game and lets you quit.
@@ -111,10 +113,10 @@ The Escape key always pauses the game and lets you quit.
 *******************************************
 
 
-Your vehicle is pretty weak to start off with, so you'll need to upgrade it to have a chance of success. There are a few types of object you can gather from the dust, ashes and froth left by your departed enemies in order to accumulate enough power to push through the layers:
+Your vehicle is pretty weak to start off with, so you'll need to upgrade it to have a chance of success. There are a few types of object you can gather from the ashes, dust and froth left by your departed enemies in order to accumulate enough power to push through the layers:
 
 - Repairs
-These are orange crosses, and they fix your craft up a bit.
+These are orange crosses, and they fix your craft up a bit. 
 
 - Secondary Weapons
 Weapons to back up your darts. There are several different types, some of them more useful than others. Generally, the easier a weapon is to hit with the less damage it will do, so Orbs do a lot more damage than Worms, for example. You lose your current weapon when you are destroyed.
@@ -130,7 +132,7 @@ These are important! Symbols come in three shapes, and they cycle through variou
    Green Symbols
  Square - increases the thrust produced by your engine(s), but also adds extra drag while you are accelerating (not at other times). This increases manoeuvreability but can reduce top speed. It makes your vehicle handle more like a car.
  Circle - lets you turn more quickly.
- Triangle - increases the thrust produced by your engine(s) by a little bit, and also reduces drag all the time. It makes your vehicle handle more like a hovercraft.
+ Triangle - increases the thrust produced by your engine(s) by a little bit, and also reduces drag all the time. It makes your vehicle handle more like a hovercraft. 
 
    Red Symbols
  Square - increases the damage your secondary weapon does by about a third (so with one red square it will do 133% damage, and with two it will do 166%, etc).
@@ -172,13 +174,14 @@ Find out where the left and right speakers are.
 Most keyboards have a problem which prevents them detecting certain combinations of keypresses, making cooperative and duel modes almost unplayable. Use Test Keys to work out which combinations work best.
 
 - Resolution
-Choose between 640x480 and 800x600, windowed and fullscreen. You'll have to restart the game for this to take effect. If you switch resolutions and the game crashes on start-up (Allegro has trouble with some video cards), edit the overgod.cfg file and change
+Choose between 640x480 and 800x600, windowed and fullscreen. You'll have to restart the game for this to take effect. If you switch resolutions and the game crashes on start-up (Allegro has trouble with some video cards), edit the overgod.cfg file and change 
 Resolution=1 [or 2, 3, 4]
-to
+to 
 Resolution=0
+(there are instructions in the file)
 
 - Colour Text
-If you have trouble distinguishing colours, this option will tell you what colour a symbol is.
+If you have trouble distinguishing colours, this option will tell you in writing what colour a symbol is.
 
 
 

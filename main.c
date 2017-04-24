@@ -97,6 +97,8 @@ display.h
 */
 
 
+#include "config.h"
+
 #include "allegro.h"
 
 //#include <conio.h>
@@ -106,7 +108,6 @@ display.h
 //#include <pc.h>
 #include <math.h>
 
-#include "config.h"
 
 #include "palette.h"
 

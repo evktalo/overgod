@@ -1104,9 +1104,9 @@ void make_rle_large_ship(BITMAP *source_bmp, int which_ship)
    case 3:
     base_col = COLOUR_RED1; break;
   }
-  for (x = 0; x < 50; x ++)
+  for (x = 0; x < 49; x ++)
   {
-   for (y = 0; y < 50; y ++)
+   for (y = 0; y < 49; y ++)
    {
     px = getpixel(temp_bmp, x, y);
     if (i == 4)

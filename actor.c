@@ -70,13 +70,13 @@ curve: bounces off enemies (ram)
 
 */
 
+#include "config.h"
 
 #include "allegro.h"
 
 #include <math.h>
 //#include <stdlib.h>
 
-#include "config.h"
 
 #include "globvars.h"
 
@@ -207,20 +207,20 @@ void run_actors(void)
   if (actor[i].recycle2 > 0)
    actor[i].recycle2 --;
    
-  if (actor[i].turret_recycle > 0)
-   actor[i].turret_recycle --;
-  if (actor[i].sidekick_recycle > 0)
-   actor[i].sidekick_recycle --;
-  if (actor[i].heavy_recycle > 0)
-   actor[i].heavy_recycle --;
-  if (actor[i].backfire_recycle > 0)
-   actor[i].backfire_recycle --;
+//  if (actor[i].turret_recycle > 0)
+//   actor[i].turret_recycle --;
+//  if (actor[i].sidekick_recycle > 0)
+//   actor[i].sidekick_recycle --;
+//  if (actor[i].heavy_recycle > 0)
+//   actor[i].heavy_recycle --;
+//  if (actor[i].backfire_recycle > 0)
+//   actor[i].backfire_recycle --;
    
   if (actor[i].secondary_burst > 0)
    continue_secondary_burst(i); 
    
-  if (actor[i].just_upgraded_timeout > 0)
-   actor[i].just_upgraded_timeout --;
+//  if (actor[i].just_upgraded_timeout > 0)
+//   actor[i].just_upgraded_timeout --;
   if (actor[i].just_collided > 0)
    actor[i].just_collided --;
   move_actor(i);
@@ -585,7 +585,7 @@ void actor_shield(int a)
   actor[a].shield_pulse --;
 
 }
-
+/*
 
 void actor_sidekicks(int a)
 {
@@ -657,13 +657,13 @@ void actor_sidekicks(int a)
    
   speed_mult *= accel;
   speed_mult /= 10;
-/*  if (speed_mult < 20 && abs(actor[a].sidekick_x_speed [i]) + abs(actor[a].sidekick_y_speed [i]) < 2000)
+/ *  if (speed_mult < 20 && abs(actor[a].sidekick_x_speed [i]) + abs(actor[a].sidekick_y_speed [i]) < 2000)
   {
    actor[a].sidekick_angle [i] = turn_towards_angle(actor[a].sidekick_angle [i], actor[a].angle + ANGLE_QUARTER, 8);
    actor[a].sidekick_x_speed [i] = 0;
    actor[a].sidekick_y_speed [i] = 0;
   }
-   else*/
+   else
    {
     actor[a].sidekick_angle [i] = turn_towards_xy(actor[a].sidekick_x [i], actor[a].sidekick_y [i], target_x, target_y, actor[a].sidekick_angle [i], 16);
 
@@ -700,6 +700,8 @@ void actor_sidekicks(int a)
 
 
 }
+
+*/
 
 int gain_symbol(int a, int abil, int symb)
 {

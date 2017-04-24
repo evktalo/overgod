@@ -1,14 +1,20 @@
-CC=gcc
-CFLAGS=-O2 -march=native -w
-LDFLAGS=-lm -lalleg
+CC?=gcc
+CFLAGS?=-O2 -march=native
+CFLAGS_SURPRESS_WARNING?=-Wno-format-security
+LDFLAGS+=-lm -lalleg
 
 SOURCE=$(wildcard *.c)
+OBJECTS=$(patsubst %.c,%.o,$(SOURCE))
 DEPENDENCY=$(wildcard *.h) Makefile
+TARGET=overgod
 
-all: overgod
+all: $(TARGET)
 
-debug: CFLAGS += -DDEBUG -g
-debug: overgod
+$(TARGET): $(OBJECTS)
+	$(CC) $^ $(LDFLAGS) -o $@
 
-overgod: $(SOURCE) $(DEPENDENCY)
-	$(CC) $(SOURCE) $(CFLAGS) $(LDFLAGS) -o overgod
+%.o: %.c $(DEPENDENCY)
+	$(CC) $< $(CFLAGS) $(CFLAGS_SURPRESS_WARNING) -c -o $@
+
+clean:
+	rm -f $(OBJECTS) $(TARGET)

@@ -33,10 +33,10 @@ for a bit more information.
 */
 
 #include <math.h>
+#include "config.h"
 
 #include "allegro.h"
 
-#include "config.h"
 
 #include "globvars.h"
 
@@ -67,7 +67,6 @@ void get_input(void)
 
 
  int i;
- 
  if (player[0].actor_controlled != -1)
  {
   for (i = 0; i < NO_CMDS; i ++)

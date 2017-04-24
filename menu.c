@@ -32,12 +32,13 @@ which are authorised to write directly to the screen.
 
 */
 
+#include "config.h"
+
 #include "allegro.h"
 
 //#include <stdlib.h>
 #include <string.h>
 
-#include "config.h"
 #include "globvars.h"
 
 #include "stuff.h"

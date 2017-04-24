@@ -31,11 +31,12 @@ This file contains:
 
 */
 
+#include "config.h"
+
 #include "allegro.h"
 
 #include <math.h>
 
-#include "config.h"
 #include "globvars.h"
 
 #include "stuff.h"

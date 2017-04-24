@@ -9,7 +9,6 @@ Copyright 2005 Linley Henzell
 *******************************************
 
 
-
 Overgod is distributed under the terms of the Free Software Foundation's General Public Licence (GPL) - see the file LICENCE.TXT. It comes with no warranty, and no liability is accepted for any harm it may do to you or your computer. In the unlikely event that it causes you some injury, contact your MP or other local representative. Read the licence for more information.
 
 The source code should be available from http://users.olis.net.au/zel/
@@ -28,6 +27,7 @@ If you like Overgod, you might also like some of my other games:
 Contents
 *******************************************
 
+
 1. Acknowledgements
 2. Introduction
 3. Controls
@@ -41,6 +41,7 @@ Contents
 1. Acknowledgements
 *******************************************
 
+
 Overgod was made with:
 - The MingW version of the Gnu Compiler Collection C compiler
 - Bloodshed Software's Dev-C++
@@ -48,6 +49,7 @@ Overgod was made with:
 - The GIMP (for graphics)
 - Psycle (for sound) and various VSTs, including a set by Erik Wollo
 - Audacity (for sample editing)
+- UPX (used to pack the executable - from http://upx.sourceforge.net)
 
 Many thanks to anyone who worked on any of these excellent free programs!
 
@@ -111,7 +113,7 @@ The Escape key always pauses the game and lets you quit.
 *******************************************
 
 
-Your vehicle is pretty weak to start off with, so you'll need to upgrade it to have a chance of success. There are a few types of object you can gather from the dust, ashes and froth left by your departed enemies in order to accumulate enough power to push through the layers:
+Your vehicle is pretty weak to start off with, so you'll need to upgrade it to have a chance of success. There are a few types of object you can gather from the ashes, dust and froth left by your departed enemies in order to accumulate enough power to push through the layers:
 
 - Repairs
 These are orange crosses, and they fix your craft up a bit. 
@@ -176,9 +178,10 @@ Choose between 640x480 and 800x600, windowed and fullscreen. You'll have to rest
 Resolution=1 [or 2, 3, 4]
 to 
 Resolution=0
+(there are instructions in the file)
 
 - Colour Text
-If you have trouble distinguishing colours, this option will tell you what colour a symbol is.
+If you have trouble distinguishing colours, this option will tell you in writing what colour a symbol is.
 
 
 

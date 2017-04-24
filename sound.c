@@ -32,13 +32,14 @@ enums in sound.h
 
 */
 
+#include "config.h"
+
 #include "allegro.h"
 
 #include <string.h>
 
 #include "sound.h"
 
-#include "config.h"
 #include "globvars.h"
 
 #include "math.h"

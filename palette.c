@@ -67,10 +67,11 @@ The palette functions
 
 */
 
+#include "config.h"
+
 #include "allegro.h"
 
 
-#include "config.h"
 #include "palette.h"
 #include "globvars.h"
 

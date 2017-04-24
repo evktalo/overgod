@@ -35,12 +35,11 @@ got around to changing it.
 
 */
 
+#include "config.h"
 
 #include "allegro.h"
 
 #include <math.h>
-
-#include "config.h"
 
 #include "globvars.h"
 

@@ -2,6 +2,8 @@
 
 //#define OVERGOD_DOS
 
+//#define ALLEGRO_STATICLINK
+
 #ifdef ALLEGRO_WINDOWS
 #define OVERGOD_WINDOWS
 #endif

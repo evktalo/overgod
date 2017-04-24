@@ -31,12 +31,13 @@ This file contains:
 
 */
 
+#include "config.h"
+
 #include "allegro.h"
 
 #include <math.h>
 //#include <stdlib.h>
 
-#include "config.h"
 
 int turn_towards_angle(int angle, int tangle, int turning);
 

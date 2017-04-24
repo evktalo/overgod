@@ -30,6 +30,7 @@ This file contains:
  - functions which put stuff onto the screen
 
 */
+#include "config.h"
 
 #include "allegro.h"
 
@@ -37,7 +38,6 @@ This file contains:
 #include <string.h>
 
 
-#include "config.h"
 #include "globvars.h"
 #include "palette.h"
 

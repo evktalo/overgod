@@ -1199,7 +1199,7 @@ struct cloudstruct
  int tickrate;
  int delta_tickrate;
  int status;
- int colour [5];
+ int colour [4];
 };
 
 struct pickupstruct

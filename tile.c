@@ -31,6 +31,8 @@ This file contains:
 
 */
 
+#include "config.h"
+
 #include "allegro.h"
 
 #include <math.h>
@@ -38,7 +40,6 @@ This file contains:
 
 //#include <stdlib.h>
 
-#include "config.h"
 #include "globvars.h"
 #include "palette.h"
 #include "cloud.h"
